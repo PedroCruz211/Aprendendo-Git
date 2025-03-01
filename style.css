@@ -1,32 +1,35 @@
+/* Resetando as margens, o padding e o box-sizing para garantir que todos os elementos sigam o mesmo padrão */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; /* Corrigido de block-size para box-sizing */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    box-sizing: border-box; /* Faz com que o padding e as bordas sejam incluídos nas dimensões dos elementos */
 }
 
+/* Estilizando o corpo da página */
 body {
-    background-image: linear-gradient(
-        to top, red, blue);
- 
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: linear-gradient(to top, red, blue); /* Cria um gradiente de cor do vermelho (embaixo) para o azul (em cima) */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da janela do navegador */
+    display: flex; /* Usa o modelo Flexbox para organizar os elementos de forma flexível */
+    align-items: center; /* Alinha o conteúdo do corpo verticalmente ao centro */
+    justify-content: center; /* Alinha o conteúdo do corpo horizontalmente ao centro */
 }
 
-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
+/* Estilizando a div */
+div {
+    display: flex; /* Usa o modelo Flexbox para organizar os itens dentro da div de forma flexível */
+    flex-direction: column; /* Organiza os itens de forma vertical, ou seja, um embaixo do outro */
+    align-items: center; /* Alinha os itens dentro da div ao centro na horizontal */
+    justify-content: center; /* Alinha os itens dentro da div ao centro na vertical */
+    gap: 70px; /* Define um espaço de 70px entre os itens dentro da div */
 
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px orange;
+    background-color: white; /* Define a cor de fundo da div como branca */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px em todos os lados da div */
+    border-radius: 20px; /* Cria bordas arredondadas com raio de 20px na div */
+    box-shadow: 5px 5px 15px orange; /* Adiciona uma sombra suave de 5px de deslocamento horizontal e vertical e 15px de borrão, com cor laranja */
+    border: none; /* Remove qualquer borda ao redor da div */
 }
 
+/* Estilizando a imagem dentro de um elemento <main> */
 main > img {
-    border-radius: 50%;
+    border-radius: 50%; /* Torna a imagem redonda (arredondando as bordas com 50% do tamanho total da imagem) */
 }
